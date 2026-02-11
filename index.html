@@ -26,6 +26,9 @@
           <a href="./index.html" class="logo-type">
             Web<span class="logo-span">Studio</span>
           </a>
+          <svg class="icon-info-nav" width="24" height="24">
+            <use href="./images/icons.svg#icon-inofo-icon"></use>
+          </svg>
           <ul class="header-nav-list">
             <li class="header-nav-list-item">
               <a href="./index.html" class="nav-link current">Studio</a>
@@ -38,7 +41,6 @@
             </li>
           </ul>
         </nav>
-
         <address class="contacts-address">
           <ul class="contacts-list">
             <li>
@@ -54,9 +56,82 @@
           </ul>
         </address>
       </div>
+      <div id="modal-header" class="overlay-header">
+        <div class="modal-modal-header">
+          <button type="button" class="modal-close">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header-nav">
+            <ul class="header-nav-list-modal">
+              <li class="header-nav-list-item">
+                <a href="./index.html" class="nav-link current">Studio</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a href="" class="nav-link">Portfolio</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a href="" class="nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts-address-modal">
+            <ul class="contacts-list-modal">
+              <li>
+                <a href="mailto:info@devstudio.com" class="contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="contact-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="modal-form">
+            <ul class="social-icons-people">
+              <li class="icon-social">
+                <a class="socials-lincs" href="https://www.instagram.com/">
+                  <svg class="class-name" width="16" height="16">
+                    <use href="./images/icons.svg#icon-inst-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social">
+                <a class="socials-lincs" href="https://x.com/">
+                  <svg class="class-name" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social">
+                <a
+                  class="socials-lincs"
+                  href="https://www.facebook.com/home.php"
+                >
+                  <svg class="class-name" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social">
+                <a
+                  class="socials-lincs"
+                  href="https://www.linkedin.com/login/ru"
+                >
+                  <svg class="class-name" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linendin-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <!--hero-->
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -463,6 +538,7 @@
         </div>
       </section>
     </main>
+    <!--footer-->
     <footer class="footer-main">
       <div class="footer-main-container container">
         <div class="container-footer">
