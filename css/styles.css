@@ -14,9 +14,9 @@ body {
   --overlay-text-color: #ffffff;
 }
 
-.container,
+/*                                                                              */
 .container-benefits {
-  max-width: 320x;
+  max-width: 320px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -80,6 +80,10 @@ body {
 }
 
 .icon-info-nav {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   fill: #2f2f37;
   display: block;
 }
@@ -159,11 +163,14 @@ body {
 }
 
 .contacts-list {
-  /* display: flex; */
+  display: flex;
   gap: 40px;
   list-style: none;
+  flex-direction: column;
   /* margin-bottom: 48px; */
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-link {
@@ -1480,19 +1487,19 @@ button:disabled {
     padding: 0%;
     margin: 0;
     margin-right: auto; */
-    .contacts-list {
-      flex-direction: column;
-      gap: 12px;
-      align-items: center;
-    }
   }
   /* 
   .contacts-list {
     display: flex;
     gap: 40px;
     list-style: none;
-  } */
+    } */
 
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
   .contact-link {
     color: #434455;
     font-weight: 400;
@@ -1617,7 +1624,7 @@ button:disabled {
   }
 
   .contacts-list {
-    display: flex;
+    flex-direction: row;
     gap: 40px;
     list-style: none;
   }
@@ -1711,14 +1718,14 @@ button:disabled {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  /* .container {
     max-width: 768px;
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
-    /* box-sizing: border-box; */
-  }
+
+  } */
 
   .third-title {
     text-align: left;
@@ -1843,8 +1850,8 @@ button:disabled {
   .container {
     max-width: 768px;
     width: 100%;
-    padding-left: 108px;
-    padding-right: 108px;
+    /* padding-left: 108px;
+    padding-right: 108px; */
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -2089,10 +2096,7 @@ button:disabled {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
-    /* margin: 0 auto;
-    padding-left: 156px;
-    padding-right: 156px; */
+    max-width: 1158px;
   }
 
   .logo-footer {
