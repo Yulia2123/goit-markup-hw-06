@@ -175,7 +175,8 @@ body {
 
 .contact-link {
   color: #434455;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 40px;
   /* line-height: 1.5; */
   text-decoration: none;
@@ -505,8 +506,8 @@ img {
 /* About */
 
 .social-icons-people {
-  /* gap: 24px; */
-  gap: 40px;
+  gap: 24px;
+  /* gap: 40px; */
   display: flex;
   justify-content: center;
   list-style: none;
@@ -900,8 +901,8 @@ img {
   margin: 0;
 }
 .class-name {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   display: block;
   fill: #f4f4fd;
 }
@@ -1322,7 +1323,13 @@ button:disabled {
 @media screen and (max-width: 767px) {
   .header-nav-list-modal,
   .contacts-list-modal {
-    display: none;
+    gap: 16px;
+    margin-bottom: 0;
+  }
+  .header-nav-list-item,
+  .contacts-list-modal li {
+    margin: 0;
+    padding: 0;
   }
 
   .nav-link,
@@ -1330,6 +1337,15 @@ button:disabled {
   .socials-lincs {
     text-decoration: none;
   }
+
+  .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+
   .overlay-header {
     display: block;
     position: fixed;
@@ -1339,15 +1355,17 @@ button:disabled {
     background-color: rgba(46, 47, 66, 0.4);
     /* padding: 24px; */
     padding: 0;
+    z-index: 1000;
   }
 
   .modal-modal-header {
     background-color: #fff;
     height: 100%;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: space-between;
     padding: 24px;
+    height: 100%;
   }
 
   .header-nav-list-modal {
@@ -1370,6 +1388,30 @@ button:disabled {
     padding: 0;
     margin: 0;
     display: block;
+  }
+  .social-icons-people {
+    display: flex;
+    gap: 16px; /* відстань між іконками */
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .icon-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  .class-name {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
+  }
+
+  .header-nav {
+    padding-bottom: 168px;
+    padding-left: 16px;
+    padding-top: 24px;
   }
 }
 
@@ -1849,7 +1891,7 @@ button:disabled {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    width: 100%;
+    /* width: 100%; */
     /* padding-left: 108px;
     padding-right: 108px; */
     margin: 0 auto;
@@ -1981,7 +2023,8 @@ button:disabled {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    width: 100%;
+    margin: 0 auto;
+    /* width: 100%; */
     padding-left: 16px;
     padding-right: 16px;
     /* margin: 16px 16px; */
@@ -2090,6 +2133,14 @@ button:disabled {
 }
 
 @media screen and (min-width: 768px) {
+  .contact-link {
+    /* color: #434455; */
+    font-weight: 400;
+    /* line-height: 1.5; */
+    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    font-size: 16px;
+    line-height: 24px;
+  }
   /* .footer-main-container {
     width: calc((100% - 2 * 24px) / 2); */
 }
@@ -2240,6 +2291,23 @@ button:disabled {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-subscibe {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .modal-input-subscr {
+    margin-bottom: 0;
+    width: 300px;
+  }
+
+  .modal-button-subscr {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .modal-modal {
     width: 288px;
