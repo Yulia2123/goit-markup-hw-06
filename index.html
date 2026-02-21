@@ -623,25 +623,29 @@
           </ul>
         </div>
         <form class="footer-checkbox">
-          <div class="modal-field">
-            <p class="social-media">Subscribe</p>
-          </div>
-          <div class="footer-subscibe">
-            <div class="icon-wriper-users">
-              <input
-                type="email"
-                class="modal-input-subscr"
-                name="subscribe-user"
-                required
-                placeholder="E-mail"
-              />
+          <div class="email-footer">
+            <div class="modal-field">
+              <p class="social-media">Subscribe</p>
             </div>
-            <button class="modal-button-subscr social-media" type="submit">
-              Subscribe
-              <svg class="modal-checkpoint-subs" width="24" height="24">
-                <use href="./images/icons.svg#icon-footer-subsribe"></use>
-              </svg>
-            </button>
+            <div class="footer-subscibe">
+              <div class="icon-wriper-users">
+                <input
+                  type="email"
+                  class="modal-input-subscr"
+                  name="subscribe-user"
+                  required
+                  placeholder="E-mail"
+                />
+              </div>
+            </div>
+            <div class="subscr-footer-butt">
+              <button class="modal-button-subscr social-media" type="submit">
+                Subscribe
+                <svg class="modal-checkpoint-subs" width="24" height="24">
+                  <use href="./images/icons.svg#icon-footer-subsribe"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </form>
       </div>
@@ -708,15 +712,17 @@
           <div class="modal-radio">
             <input class="checkbox-input" type="checkbox" id="yes" name="yes" />
             <label for="yes" class="modal-chack-label">
-              <span>
+              <span class="check-box">
                 <svg class="modal-checkpoint" width="10" height="8">
                   <use href="./images/icons.svg#icon-modalbutton"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-info" href="https://www.linkedin.com/login/ru">
-                Privacy Policy
-              </a>
+              <span class="check-text"
+                >I accept the terms and conditions of the
+                <a class="modal-info" href="https://www.linkedin.com/login/ru">
+                  Privacy Policy
+                </a>
+              </span>
             </label>
           </div>
           <button class="modal-button-send" type="submit">Send</button>
